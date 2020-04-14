@@ -1,5 +1,6 @@
 const menu = () => {
     const contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = '';
 
     const h1 = document.createElement('div');
     h1.innerHTML = 'MENU';

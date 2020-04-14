@@ -1,8 +1,9 @@
 const home = () => {
     const contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = '';
 
     const img = document.createElement('div');
-    img.innerHTML = '<img src="../dimsum.jpg" width="556" height="367"></img>';
+    img.innerHTML = '<img src="../dimsum.jpg" width="556" height="367">';
     contentDiv.appendChild(img);
 
     const h1 = document.createElement('div');
