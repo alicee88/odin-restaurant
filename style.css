@@ -16,3 +16,49 @@
     width: 50%;
     height: 50%;
   }
+
+  .contact img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .tabs ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    position: relative;
+
+  }
+
+  .tabs ul:before {
+    z-index: 1;
+  }
+
+  .tabs ul:after {
+    position: absolute;
+    content: "";
+    border-bottom: solid 1px #AAA;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .tabs li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 1px solid #AAA;
+    background: #ECECEC;
+    position: relative;
+    z-index: 0;
+  }
+
+  .tabs li.active {
+    background: #FFF;
+    color: #000;
+    z-index: 2;
+    border-bottom-color: #FFF;
+  }
