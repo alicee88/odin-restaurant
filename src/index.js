@@ -6,14 +6,15 @@ const tabs = document.querySelectorAll('.tab');
 tabs.forEach(tab => tab.addEventListener('click', toggleActive));
 
 const content = document.getElementById('content');
+content.appendChild(home());
 
 function toggleActive(e) {
     tabs.forEach(tab => tab.classList.remove('active'));
     this.classList.add('active');
 
+    content.innerHTML = '';
     if(this.classList.contains('home')) {
-        // content.innerHTML = '';
-        home();
+        content.appendChild(home());
     }
     if(this.classList.contains('menu')) {
         menu();
