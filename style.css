@@ -1,3 +1,36 @@
+html { 
+  background: url(../dimsum.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home,
+.menu {
+  margin: 0 auto;
+  margin-top: 50px; 
+  padding: 2%;
+  width: 50%;
+  text-align: center;
+  color: #DDDDDD;
+  background: rgba(0,0,0,0.5);
+
+}
+
+.home h1 {
+  font-size: 5rem;
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.home p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +60,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    line-height: 24px;
+    line-height: 48px;
     position: relative;
 
   }
@@ -48,8 +81,9 @@
 
   .tabs li {
     display: inline-block;
-    margin: 0 5px;
-    padding: 0 5px;
+    margin: 0 10px;
+    padding: 0 10px;
+    width: 20%;
     border: 1px solid #AAA;
     background: #ECECEC;
     position: relative;
@@ -62,3 +96,9 @@
     z-index: 2;
     border-bottom-color: #FFF;
   }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
