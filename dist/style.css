@@ -1,4 +1,6 @@
-html { 
+
+html {
+  box-sizing: border-box;
   background: url(../dimsum.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,8 +10,12 @@ html {
   font-family: 'Ubuntu', sans-serif;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .home,
-.menu {
+.contact {
   margin: 0 auto;
   margin-top: 50px; 
   padding: 2%;
@@ -32,23 +38,54 @@ html {
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px; 
+  padding: 2%;
+  width: 50%;
+  color: black;
+  background: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-shadow:inset 0px 0px 0px 1px black;
+    -moz-box-shadow:inset 0px 0px 0px 1px black;
+    box-shadow:inset 0px 0px 0px 1px black;
+  border: 8px solid white;
+
+}
+
+.menu h1 {
+  font-family: 'Cuprum', sans-serif;
+  flex-basis: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
 }
 
 .card {
     padding: 1.5%;
     flex-grow: 1;
     flex-basis: 30%;
-  
-    display: flex; /* so child elements can use flexbox stuff too! */
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    display: flex; 
     flex-direction: column;
   }
 
   .card img {
+    width: 30%;
+    height: 30%;
+    
+  }
+
+  .content p {
+    font-size: 0.75rem;
+  }
+
+  /* .card img.Tea {
     width: 50%;
     height: 50%;
-  }
+  } */
 
   .contact img {
     width: 50%;

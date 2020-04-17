@@ -11,7 +11,7 @@ const home = () => {
     p.innerHTML = `
                 <hr>
                 <p>Experience Chinese brunch - food to share with those you love.</p>           
-                <p>Wooden steamer baskets of dumplings, perfectly sloppy cheung fun, pillowy soft char siu bao, crisp fried lo bak go,
+                <p>Wooden steamer baskets of dumplings, perfectly sloppy cheung fun, pillowy soft char siu bao, sweet custard tarts,
                 and hot oolong tea.</p>
                 <p>We use the traditional trolley service for that authentic Hong Kong experience.</p>
                 `;

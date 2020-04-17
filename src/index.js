@@ -13,13 +13,13 @@ function toggleActive(e) {
     this.classList.add('active');
 
     content.innerHTML = '';
-    if(this.classList.contains('home')) {
+    if(this.classList.contains('tab-home')) {
         content.appendChild(home());
     }
-    if(this.classList.contains('menu')) {
-        menu();
+    if(this.classList.contains('tab-menu')) {
+        content.appendChild(menu());
     }
-    if(this.classList.contains('contact')) {
+    if(this.classList.contains('tab-contact')) {
         contact();
     }
 
