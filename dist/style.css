@@ -17,7 +17,7 @@ html {
 .home,
 .contact {
   margin: 0 auto;
-  margin-top: 50px; 
+  margin-top: 50px;
   padding: 2%;
   width: 50%;
   text-align: center;
@@ -33,7 +33,7 @@ html {
 }
 
 .home p {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -82,14 +82,79 @@ html {
     font-size: 0.75rem;
   }
 
-  /* .card img.Tea {
-    width: 50%;
-    height: 50%;
-  } */
+  .contact h1 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 3rem;
+  }
 
-  .contact img {
-    width: 50%;
-    height: 50%;
+  .contact .guests label {
+    margin-bottom: 0;
+  }
+  
+  .contact .guests p {
+    display: inline-block;
+    background: #FFFFFF;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.8;
+    border: 1px solid black;
+    width: 150px;
+    margin: 10px 0;
+  }
+
+  .contact .guests button {
+    background: white;
+    line-height: 1.8;
+    border: 1px solid black;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .contact .bookings {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .contact label {
+    float: left;
+    text-align: right;
+    width: 100px;
+    margin: 10px 0;
+  }
+
+  .contact input, select {
+    padding: 1%;
+    margin: 10px 0;
+    width: 210px;
+    text-align: center;
+    background: #FFFFFF;
+    border: none;
+  }
+
+  .contact .submit {
+    font-size: 1rem;
+    background: #FFFFFF;
+    line-height: 1.8;
+    margin-top: 30px;
+    width: 150px;
+  }
+
+  .contact .submit:hover {
+    background: #DFB758;
+  }
+
+  .contact .contact-phone {
+    margin-top: 0;
+    color: #DFB758;
+  }
+
+  .contact h1 {
+    margin-bottom: 0;
+  }
+
+  .contact h4 {
+    color: #DFB758;
   }
 
   .tabs ul{
@@ -121,17 +186,17 @@ html {
     margin: 0 10px;
     padding: 0 10px;
     width: 20%;
-    border: 1px solid #AAA;
+    border: 1px solid #DDDDDD;
     background: #ECECEC;
     position: relative;
     z-index: 0;
   }
 
   .tabs li.active {
-    background: #FFF;
+    background: #DFB758;
     color: #000;
     z-index: 2;
-    border-bottom-color: #FFF;
+    border-bottom-color: #DFB758;
   }
 
   hr {

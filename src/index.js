@@ -20,10 +20,7 @@ function toggleActive(e) {
         content.appendChild(menu());
     }
     if(this.classList.contains('tab-contact')) {
-        contact();
+        content.appendChild(contact());
     }
 
 }
-home();
-//menu();
-//contact();
